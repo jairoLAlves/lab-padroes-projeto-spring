@@ -3,9 +3,11 @@ package com.padroesprojetospring.labpadroesprojetospring.repository;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import ch.qos.logback.core.net.server.Client;
+import com.padroesprojetospring.labpadroesprojetospring.model.Cliente;
+
+
 
 @Repository
-public interface ClienteRepository extends CrudRepository<Client, Long> {
+public interface ClienteRepository extends CrudRepository<Cliente, Long> {
     
 }

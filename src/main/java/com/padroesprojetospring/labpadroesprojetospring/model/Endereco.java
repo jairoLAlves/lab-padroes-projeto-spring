@@ -3,9 +3,9 @@ package com.padroesprojetospring.labpadroesprojetospring.model;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import org.springframework.data.annotation.Id;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-import jakarta.persistence.Entity;
 
 /**
  * @author Jairo L. Alves
@@ -24,7 +24,6 @@ public class Endereco {
     private String gia;
     private String ddd;
     private String siafi;
-    private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
     
 
     public String getCep() {
@@ -107,14 +106,6 @@ public class Endereco {
         this.siafi = siafi;
     }
 
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
-    }
-
-
+   
 
 }
